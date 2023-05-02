@@ -21,7 +21,9 @@ if(device1&&!device2){
 if(device1&&device2){
     query.$or=[{"device":device1},{"device":device2}]
 }
-
+if(device1&&device2&&device3){
+    query.$or=[{"device":device1},{"device":device2},{"device":device3}]
+}
 
 // device=Mobile
 // device=$and:[{device:device1},{device:device2}]
